@@ -17,17 +17,20 @@ Copilot will automatically execute the agent, follow the instructions, and use t
         - `instructions/*.md` → step-by-step workflows
         - `prompts/*.md` → triggerable tasks
 3. Trigger an agent using a prompt file
-    - Open the `.github/prompts/update_all_docs.prompt.md`
-    - Click **Run with Copilot**
-        - This is the play button at the top right of the text editor area.
-    - Copilot will
-        - Load the agent (`todo-doc-writer.agent.md`)
-        - Read the instructions
-        - Execute skills (`scan_api.js`, `scan_frontend.js`, etc.)
-        - Update documentation files in `/docs`
-    - Other prompts can be triggered in the same way
-        - `update_all_docs.prompt.md`
-        - `generate_mermaid.prompt.md`
+    - Method 1:
+        - Open the `.github/prompts/update_all_docs.prompt.md`
+        - Click **Run with Copilot**
+            - This is the play button at the top right of the text editor area.
+        - Copilot will
+            - Load the agent (`todo-doc-writer.agent.md`)
+            - Read the instructions
+            - Execute skills (`scan_api.js`, `scan_frontend.js`, etc.)
+            - Update documentation files in `/docs`
+        - Other prompts can be triggered in the same way
+            - `update_all_docs.prompt.md`
+            - `generate_mermaid.prompt.md`
+    - Method 2:
+        - From the Copilot Chat window type in `/update_all_docs`
 4. Run the step-by-step project creation
     - Each instruction file is a "recipe" Copilot follows.
         - e.g.
