@@ -1,2 +1,9 @@
 docs/**
 src/**
+!src/
+!src/backend
+!src/backend/**
+!src/datastore
+!src/datastore/**
+src/backend/node_modules/
+data/
